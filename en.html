@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <section class="background-main-page" id="main-page" style="display: none">
+      <div
+        style="height: 54vh; width: 100%"
+        onclick="changePage('main-page', 'product-selection')"
+      ></div>
+      <p class="main-page-text">Idioma:</p>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 16px;
+        "
+      >
+        <img
+          src="./images/languages/EN.png"
+          style="height: 170px"
+          onclick="changePage('main-page', 'product-selection', 'en')"
+        />
+        <img
+          src="./images/languages/ES.png"
+          style="margin-left: 16px; height: 170px"
+          onclick="changePage('main-page', 'product-selection', 'es')"
+        />
+        <img
+          src="./images/languages/FR.png"
+          style="margin-left: 16px; height: 170px"
+          onclick="changePage('main-page', 'product-selection', 'fr')"
+        />
+      </div>
+    </section>
+
+    <section
+      id="product-selection"
+      page="product-selection"
+      style="
+        height: 100vh;
+        width: 100%;
+        background: url(./images/banner-page-2.png);
+        display: none;
+        object-fit: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div style="height: 38%"></div>
+      <div class="product-selection-line">
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product1')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/Acucar.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">1°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Sugar in <br />
+            Oil
+          </p>
+        </div>
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product2')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela4Gigi.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">2°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Deo cologne <br />
+            Gigi
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; padding: 0 64px">
+        <hr class="hr-styled" style="width: 100%" />
+      </div>
+
+      <div class="product-selection-line">
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product3')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela5Difusor.png"
+              style="
+                width: 350px;
+                height: 350px;
+                object-fit: scale-down;
+                margin-left: 60px;
+              "
+            />
+            <div class="product-order-badge">3°</div>
+          </div>
+
+          <p class="product-selection-description-text">Essence Diffuser</p>
+        </div>
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product4')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela6Creme.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">4°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Oil in Cream <br />
+            Copaiba and Andiroba
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; padding: 0 64px">
+        <hr class="hr-styled" style="width: 100%" />
+      </div>
+
+      <div class="product-selection-line">
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product5')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela2-vela.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">5°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Candle Rites <br />
+            Muru Muru
+          </p>
+        </div>
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product6')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela8Perfume.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">6°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Interior Perfume <br />
+            Pitanga
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; padding: 0 64px">
+        <hr class="hr-styled" style="width: 100%" />
+      </div>
+
+      <div class="product-selection-line">
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product7')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/Cheiros_produto.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">7°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Smells  <br />
+            from Bahia
+          </p>
+        </div>
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product8')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela10Sabonete.png"
+              style="
+                width: 350px;
+                height: 350px;
+                object-fit: scale-down;
+                margin-left: -16px;
+              "
+            />
+            <div class="product-order-badge">8°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Liquid soap <br />
+            Bark & Leaves
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; padding: 0 64px">
+        <hr class="hr-styled" style="width: 100%" />
+      </div>
+
+      <div class="product-selection-line" style="padding-bottom: 100px">
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product9')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela11Difusor.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">9°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Avadore  <br />
+            Essence Diffuser
+          </p>
+        </div>
+        <div
+          class="product-selection-content"
+          onclick="changePage('product-selection', 'product10')"
+        >
+          <div class="product-selection-image-container">
+            <img
+              src="./images/tela12-Deoparfum.png"
+              style="width: 350px; height: 350px; object-fit: scale-down"
+            />
+            <div class="product-order-badge">10°</div>
+          </div>
+
+          <p class="product-selection-description-text">
+            Select Herbo <br />
+            &nbsp;
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="product1" style="display: none">
+      <div class="floating-color-product-description-12"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product1', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product1', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="./images/Acucar.png"
+            style="margin-top: 200px; margin-bottom: 80px"
+          />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Sugar in Oil</p>
+          <p class="article-description-title">Cupuaçu & Chestnut</p>
+          <p class="article-description-title">
+            from Brazil
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+            >
+              500g
+            </span>
+          </p>
+          <div class="stamps-collection-first">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Parabeno.png" />
+            <img src="./images/approval-stamp/Conservantes.png" />
+
+            <img src="./images/approval-stamp/ativosamazonia.png" />
+          </div>
+          <p>
+            Sugar in Oil is composed of the combination of two Brazilian ingredients
+            from the Amazon, Cupuaçu and Brazil nuts. your formula
+            innovative and exclusive allows a high performance care and
+            provides deep hydration while you exfoliate your
+            skin.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of use</p>
+          <p>
+            Spread the Sugar in Oil over damp skin and make movements
+            circular motions with your hands in the desired areas. Gently massage and
+            feel all the well-being provided by the product. Shortly thereafter,
+            rinse to remove excess. Perform the exfoliation between two and
+            three times a week, always interspersing the days.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-cupuacu-1">
+              Learn more about bioactives
+            </a>
+          </div>
+
+          <hr class="hr-styled" />
+          <div style="margin-top: 48px">
+            <img
+              src="./images/Cupuacu.png"
+              style="float: right; margin-top: 36px"
+            />
+
+            <p
+              class="article-description-title"
+              id="article-description-cupuacu-1"
+            >
+              Cupuaçu
+            </p>
+            <p>
+              Native to the Brazilian Amazon, Cupuaçu is a fruit rich in
+              flavonoids and vitamins A, B and C. <br />
+
+              The butter extracted from this fruit is an excellent component in
+              cosmetic formulation, as it helps maintain skin vitality
+              and neutralizes the action of free radicals, thus protecting against
+              its premature aging.
+            </p>
+          </div>
+
+          <p class="article-description-title" style="margin-top: 64px">
+            Brazil Nuts
+          </p>
+          <img
+            src="./images/Castanha.png"
+            style="float: left; margin-top: 16px; margin-right: 36px"
+          />
+          <p>
+            Also originating in the Amazon, it is from this nut that a
+            precious oil, highly nutritious, which contains fatty acids,
+            phytosteroids and vitamins A and E. It is a rich source of
+            magnesium, thiamine and has the highest concentrations of selenium,
+            with antioxidant properties.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="product2" style="display: none">
+      <div
+        class="floating-color-product-description-12"
+        style="border-bottom-left-radius: 190px"
+      ></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product2', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product2', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="./images/tela4Gigi.png"
+            style="margin-top: 200px; margin-bottom: 80px"
+          />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">
+            Deo Cologne Gigi
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+            >
+              100ml
+            </span>
+          </p>
+          <div class="stamps-collection" style="justify-content: space-between">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img
+              src="./images/approval-stamp/Parabeno.png"
+              style="height: 100%; align-self: center"
+            />
+            <img
+              src="./images/approval-stamp/Conservantes.png"
+              style="height: 100%; align-self: center"
+            />
+          </div>
+          <p>
+            The Deo Cologne Gigi, which was awarded as the best perfume in America
+            Latina at the 25th Prêmio Atualidade Cosmética event, has a
+            striking floral fragrance and is enchanting from its packaging,
+            which has the features of a polished diamond.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of use</p>
+          <p>
+            Spray onto hot spots such as wrists, neck and behind
+            ears.
+          </p>
+
+          <p class="article-usage-title" style="margin-top: 64px">Precautions</p>
+          <p>
+            Flammable Product. Keep away from fire and surfaces.
+            heated. Store in an airy place, away from light and heat. avoid
+            direct contact with eyes and mouth. External use. keep out of
+            reach of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-produto-2">
+              Learn more about the fragrance
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <p
+            class="article-description-title"
+            id="article-description-produto-2"
+          >
+            Gigi Olfactory Pyramid
+          </p>
+          <p class="article-description-title-sub">
+            Olfactory Family:
+            <span> Flora Oriental </span>
+          </p>
+          <div class="fragrance-container">
+            <img
+              src="./images/fragrancia/colonia-gigi/pt/Notasdesaida-gigi.png"
+            />
+            <img
+              src="./images/fragrancia/colonia-gigi/pt/Notasdecorpo-gigi.png"
+            />
+            <img
+              src="./images/fragrancia/colonia-gigi/pt/Notasdefundo-gigi.png"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product3" style="">
+      <div
+        class="floating-color-product-description-11"
+        style="width: 70vw"
+      ></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product1', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product1', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img src="./images/tela5Difusor.png" style="margin-left: 200px" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Essence Diffuser</p>
+          <p class="article-description-title">
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+            >
+              500ml
+            </span>
+          </p>
+          <div class="stamps-collection"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            laoreet hendrerit ante, et iaculis nisl tincidunt quis. Donec id
+            aliquet felis. Morbi sed magna non libero sagittis maximus. Donec
+            tincidunt, mauris ut ullamcorper placerat, nisi lorem porta tortor,
+            ut luctus nisl lacus quis enim. Nulla consequat mauris a consequat
+            pharetra. Vivamus egestas nulla id ex ornare maximus. Fusce nisl
+            ipsum, finibus sollicitudin libero eu, elementum hendrerit velit.
+            Sed ac quam et quam scelerisque pretium. Pellentesque feugiat augue
+            arcu, eu faucibus nunc sodales quis. Nulla facilisi. Morbi nec
+            sagittis ex
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of use</p>
+          <p>
+            Moisten the skin, spread the soap over the body, massaging the skin
+            gently. Rinse. Keep the product out of the reach of children.
+            and domestic animals. Do not ingest. External use. in case something happens
+            reaction, seek medical advice, discontinue use and contact
+            with SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-difusor-multi">
+              Learn more about the fragrance
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <p
+            class="article-description-title"
+            id="article-description-difusor-multi"
+          >
+            Olfactory Pyramid
+          </p>
+          <p style="font-size: 3.5rem; font-style: italic">
+            Classic Line Fragrances
+          </p>
+
+          <div id="difusor-step1" style="position: relative">
+            <div
+              class="difusor-text-container article-description-title"
+              style="
+                background: url(./images/fragrancia/difusor-multi/tela5-Alecrim.png);
+                background-repeat: no-repeat;
+                color: #ecdabe;
+              "
+            >
+              <div>
+                <p>Rosemary</p>
+                <p>Olfactory Family:</p>
+                <p>Aromatic Citric</p>
+              </div>
+            </div>
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-right"
+            />
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Alecrim-Notasaida.png');
+                height: 700px;
+                background-repeat: no-repeat;
+                background-position-x: -50px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                OUTPUT NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-evenly;
+                  margin-top: 276px;
+                  margin-left: 32px;
+                  width: 100%;
+                "
+              >
+                <p>Lemon</p>
+                <p>Rosemary</p>
+                <p style="margin-left: -24px">Tangerine</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Alecrim-Notascorpo.png');
+                height: 700px;
+                background-repeat: no-repeat;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BODY NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-between;
+                  margin-top: 276px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Geranium<br /></p>
+                <p>Verbena <br /></p>
+                <p>Lavender <br /></p>
+                <p style="margin-right: 12px">Litsea <br />Cubeba</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Alecrim-Notasfundo.png');
+                height: 700px;
+                background-repeat: no-repeat;
+                background-position-x: -4px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BACKGROUND NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-between;
+                  margin-top: 296px;
+                  margin-left: 22px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Cedar</p>
+                <p style="margin-left: 20px">Musk</p>
+                <p>Tonka Bean</p>
+                <p style="margin-right: 16px; margin-left: -8px">Vanilla</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="difusor-step2" style="position: relative">
+            <div
+              class="difusor-text-container article-description-title"
+              style="
+                background: url(./images/fragrancia/difusor-multi/tela5-Ambar.png);
+                background-repeat: no-repeat;
+                color: #ecdabe;
+              "
+            >
+              <div style="margin-left: 40px">
+                <p>Amber</p>
+                <p>Olfactory Family:</p>
+                <p>
+                  Oriental <br />
+                  Wood Floral
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-left"
+            />
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-right"
+            />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Ambar-Notasaida.png');
+                height: 700px;
+                background-repeat: no-repeat;
+                background-position-x: -30px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="
+                  text-align: center;
+                  padding-top: 168px;
+                  font-size: 4rem;
+                  background-position: 20px;
+                "
+              >
+                OUTPUT NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-evenly;
+                  margin-top: 276px;
+                  margin-left: 32px;
+                  width: 100%;
+                "
+              >
+                <p style="margin-left: 74px">Lemon</p>
+                <p style="margin-left: 40px">Damascus</p>
+                <p style="margin-right: 60px">Tangerine</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Ambar-Notascorpo.png');
+                height: 700px;
+                background-repeat: no-repeat;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BODY NOTES
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-between;
+                  margin-top: 276px;
+                  padding-left: 32px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Muguet<br /></p>
+                <p>Mimosa <br /></p>
+                <p>Magnolia <br /></p>
+                <p style="margin-right: 12px">Jasmine</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Ambar-Notasfundo.png');
+                height: 920px;
+                background-repeat: no-repeat;
+                background-position-x: -4px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BACKGROUND NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-evenly;
+                  margin-top: 312px;
+                  margin-left: 30px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Amber</p>
+                <p style="margin-right: -10px">Sandalwood</p>
+                <p style="margin-right: 60px">Cedar</p>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: center;
+                  margin-top: 220px;
+                  margin-left: 22px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p style="margin-right: 80px">Musk</p>
+                <p style="margin-right: 36px">Baunilha</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="difusor-step3" style="position: relative">
+            <div
+              class="difusor-text-container article-description-title"
+              style="
+                background: url(./images/fragrancia/difusor-multi/tela5-Bambu.png);
+                background-repeat: no-repeat;
+                color: #ecdabe;
+              "
+            >
+              <div style="margin-left: 40px">
+                <p>Bamboo</p>
+                <p>Olfactory Family:</p>
+                <p>Fresh Floral</p>
+              </div>
+            </div>
+
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-left"
+            />
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-right"
+            />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Bambu-Notasaida.png');
+                height: 700px;
+                background-repeat: no-repeat;
+                background-position-x: -30px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="
+                  text-align: center;
+                  padding-top: 168px;
+                  font-size: 4rem;
+                  background-position: 20px;
+                "
+              >
+                OUTPUT NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: center;
+                  margin-top: 276px;
+                  margin-left: 32px;
+                  width: 100%;
+                "
+              >
+                <p style="margin-right: 64px">Tangerine</p>
+                <p style="margin-right: 40px">Lavender</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Bambu-Notascorpo.png');
+                height: 700px;
+                background-repeat: no-repeat;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BODY NOTES
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-around;
+                  margin-top: 276px;
+                  padding-left: 32px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p style="margin-left: 170px">Pink</p>
+                <p style="margin-right: 164px">Violet</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Bambu-Notasfundo.png');
+                height: 920px;
+                background-repeat: no-repeat;
+                background-position-x: -4px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BACKGROUND NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: center;
+                  margin-left: 12px;
+                  margin-top: 312px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p style="margin-right: 40px">Musk White</p>
+                <p>Sandalwood</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="difusor-step4" style="position: relative">
+            <div
+              class="difusor-text-container article-description-title"
+              style="
+                background: url(./images/fragrancia/difusor-multi/Casca.png);
+                background-repeat: no-repeat;
+                color: #ecdabe;
+                font-size: 4.7rem;
+              "
+            >
+              <div style="margin-left: 40px">
+                <p>Bark <br />& Leaves</p>
+                <p>Olfactory Family:</p>
+                <p>
+                  Fougere <br />
+                  Green Spice
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-left"
+            />
+            <img
+              src="./images/buttons/chevron.png"
+              class="difusor-button-right"
+            />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Casca-Notasaida.png');
+                height: 920px;
+                background-repeat: no-repeat;
+                background-position-x: -30px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="
+                  text-align: center;
+                  padding-top: 168px;
+                  font-size: 4rem;
+                  background-position: 20px;
+                "
+              >
+                OUTPUT NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-evenly;
+                  margin-top: 280px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>
+                  Cedar <br />
+                  Leaves
+                </p>
+                <p style="margin-left: -12px">Galbanum</p>
+                <p>Orange</p>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: center;
+                  margin-top: 200px;
+                  margin-left: 22px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p style="margin-right: 80px">Lemon</p>
+                <p style="margin-right: 36px">Tangerine</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Casca-Notascorpo.png');
+                height: 920px;
+                background-repeat: no-repeat;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BODY NOTES
+              </p>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-evenly;
+                  margin-top: 260px;
+                  margin-left: -12px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Lavandim</p>
+                <p style="margin-left: -12px">Rosemary</p>
+                <p>Muguet</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: center;
+                  margin-top: 220px;
+                  margin-left: 16px;
+                  text-align: center;
+                  width: 100%;
+                "
+              >
+                <p>Clove</p>
+                <p style="margin-left: 112px">Cumin</p>
+              </div>
+            </div>
+
+            <hr class="hr-styled" />
+
+            <div
+              style="
+                background: url('./images/fragrancia/difusor-multi/tela5-Casca-Notasfundo.png');
+                height: 920px;
+                background-repeat: no-repeat;
+                background-position-x: -20px;
+              "
+            >
+              <p
+                class="article-description-title"
+                style="text-align: center; padding-top: 168px; font-size: 4rem"
+              >
+                BACKGROUND NOTES
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  font-size: 3.6rem;
+                  justify-content: space-around;
+                  margin-top: 296px;
+                  width: 100%;
+                "
+              >
+                <p>Cedar</p>
+                <p style="margin-left: 50px">Amber</p>
+                <p>Patchouli</p>
+                <p style="margin-left: 16 px">Moss</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product4" style="display: none">
+      <div
+        class="floating-color-product-description-12"
+        style="border-bottom-left-radius: 190px"
+      ></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product4', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product4', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="./images/tela6Creme.png"
+            style="margin-top: 360px; margin-bottom: 40px"
+          />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Oil in Cream</p>
+          <p class="article-description-title">Copaiba & Andiroba</p>
+          <p class="article-description-title">
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+            >
+              300g
+            </span>
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p>
+            Through the properties of Copaiba & Andiroba oils, the Oil in
+            Cream provides softness, emollience, prolonged hydration and
+            delicate scent.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of use</p>
+          <p>
+            Spread all over the body, except the face, until completely absorbed.
+          </p>
+          <p class="article-usage-title" style="margin-top: 64px">Precautions</p>
+          <p>
+            Flammable Product. Keep away from fire and surfaces.
+            heated. Store in an airy place, away from light and heat. avoid
+            direct contact with eyes and mouth. External use. keep out of
+            reach of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-copaiba-1">
+              <img src="./images/buttons/cta.png" style="margin-top: 0" />
+              Learn more about assets
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <div style="margin-top: 48px; margin-bottom: 24px">
+            <img
+              src="./images/Copaiba.png"
+              style="float: right; margin-top: 36px"
+            />
+
+            <p
+              class="article-description-title"
+              id="article-description-copaiba-1"
+              style="margin-bottom: 32px"
+            >
+              Copaiba
+            </p>
+            <p>
+              Copaiba is a native fruit of the Amazon, whose extracted oil has
+              bactericidal function,<br />
+              anti-inflammatory, antibiotic, and healing.
+            </p>
+
+            <p
+              class="article-description-title"
+              style="margin-top: 64px; margin-bottom: 32px"
+            >
+              Andiroba
+            </p>
+
+            <img
+              src="./images/Andiroba.png"
+              style="float: left; margin-top: 16px; margin-right: 36px"
+            />
+            <p>
+              Dense canopy tree, reaching 30 meters in height,
+              Andiroba has an oil extracted from the seeds, known for its
+              use against sore throats and as an insect repellent,
+              in addition to other medicinal properties. Its bark also has
+              healing effects.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product5" style="display: none">
+      <div class="floating-color-product-description-11"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product5', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product5', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img src="./images/Velaritosavatim.png" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Scented Candle</p>
+          <p class="article-description-title">& Massage Rites</p>
+          <p class="article-description-title">
+            Muru Muru
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+            >
+              160g
+            </span>
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p>
+            In addition to flavoring and illuminating the environment, the Candle Ritos Muru Muru
+            has a special wax, which can be used for massage,
+            providing relaxation and perfume for the body.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title" style="margin-bottom: 56px">
+            Mode of use
+          </p>
+          <p>
+            <span style="font-weight: 600">As a Massage Candle:</span> the oil,
+            which is generated when the candle is lit, must be applied directly
+            into the skin to absorb its emollient nutrients and benefits
+            of its natural extracts. Apply from a safe distance of 20cm and
+            massage the area with circular motions.
+          </p>
+
+          <p style="margin-top: 56px">
+            <span style="font-weight: 600">As Flavoring: </span> should be
+            placed on a flat surface, away from flammable materials.
+            Can be reused multiple times. To erase it, avoid blowing,
+            put the lid that comes with the product to muffle the container and
+            interrupt the burning.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Keep away from fire and hot surfaces. save in place
+             airy, sheltered from light and heat. Avoid direct contact with eyes
+             and the mouth. External use. Keep out of reach of children and
+             domestic animals. If any reaction occurs, discontinue use,
+             seek medical advice and contact SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-muru-1">
+              <img src="./images/buttons/cta.png" style="margin-top: 0" />
+              Learn more about the asset
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <div style="margin-top: 48px; margin-bottom: 24px">
+            <img
+              src="./images/Murumuru.png"
+              style="float: right; margin-top: 36px; margin-bottom: 90px"
+            />
+
+            <p
+              class="article-description-title"
+              id="article-description-muru-1"
+              style="margin-bottom: 32px"
+            >
+              Muru Muru
+            </p>
+            <p>
+              Muru Muru is a palm seed, rich in fatty acids,
+              mainly lauric acid, myristic acid, arginine and
+              vitamins D and E. Muru Muru is used in a variety of ways as
+              food, for the manufacture of butter, handicrafts and for
+              palm heart extraction.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product6" style="display: none">
+      <div class="floating-color-product-description-11"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product6', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product6', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="./images/tela8Perfume.png"
+            style="margin: 80px 0 80px 160px"
+          />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Interior Perfume</p>
+          <p class="article-description-title">
+            Pitanga
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+              >200ml</span
+            >
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+            <img
+              src="./images/approval-stamp/Plife.png"
+              style="height: 100%; align-self: center"
+            />
+          </div>
+          <p style="margin-top: 48px">
+            Pitanga Interior Perfume (PPI) is a home spray that brings the
+            Fragrance, soft and sweet, of a fruit native to the Atlantic Forest
+            Brazilian. PPI is perfect to be applied in all dimensions
+            environment and has bactericidal action.
+          </p>
+          <p style="margin-top: 48px">
+            Product also available in fragrances: Rosemary, bar, Bamboo, 
+            Bark and Leaves, Curumim, Cotton Flower, Marruá and Provence.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of Use</p>
+          <p>
+            Spray the contents on the desired surfaces, respecting the
+            safety distance of 1.5 meters from the surface. the time of
+            duration ranges from 4 to 6 hours, in appropriate environments.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Flammable Product. Keep away from fire and surfaces.
+            heated. Store in an airy place, away from light and heat. avoid
+            direct contact with eyes and mouth. External use. keep out of
+            reach of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC
+          </p>
+          <a class="button-styled" href="#article-description-pitanga-1">
+            Learn more about the fragrance
+          </a>
+          <hr class="hr-styled" />
+          <div style="margin-top: 48px; margin-bottom: 24px">
+            <img
+              src="./images/Pitanga.png"
+              style="float: right; margin-top: 36px; margin-bottom: 90px"
+            />
+
+            <p
+              class="article-description-title"
+              id="article-description-pitanga-1"
+              style="margin-bottom: 32px"
+            >
+              Pitanga
+            </p>
+            <p>
+              Native to the Atlantic Forest, Pitanga is a fruit known for its
+              sweet, acidic taste and very characteristic aroma. In addition
+              fruit is rich in vitamins A, C, calcium, iron and phosphorus.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product7" style="display: none">
+      <div class="floating-color-product-description-12"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product7', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product7', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container" style="padding-top: 180px">
+          <img src="./images/Cheiros_produto.png" style="margin-left: -100px" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Bar Soaps</p>
+          <p class="article-description-title">Smells from Bahia</p>
+          <p class="article-description-quantity" style="font-size: 4rem">
+            5 units / 100g each
+          </p>
+          <p class="article-description-title-sub">
+            Fragrances:
+            <span> Savannah | White Wing </span>
+            <br />
+            <span>Forest | Paths of the Sea | Tropicália</span>
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p>
+            Inspired by the only Brazilian state that has 5 biomes, the
+            Soaps Smells from Bahia establishes the connection between the moment of
+            self-care and a region rich in natural beauties. The box brings
+            information about each of the biomes and the soaps tell the
+            history through smells, promoting a sensory journey
+            complete.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of Use</p>
+          <p>
+            Moisten the skin, spread the soap over the body, massaging the skin
+            gently. Rinse.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Keep the product out of reach of children and pets.
+            Do not ingest. External use. If any reaction occurs, seek
+            medical advice, discontinue use and contact SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-sabonete-2">
+              Learn more about fragrances
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <div
+            style="display: flex; flex-direction: column"
+            id="article-description-sabonete-2"
+          >
+            <img
+              src="./images/fragrancia/sabonete-cheiros-bahia/asa-branca.png"
+              style="padding-left: 16px; margin-top: 24px"
+            />
+            <img
+              src="./images/fragrancia/sabonete-cheiros-bahia/floresta.png"
+              style="margin-top: 120px"
+            />
+            <img
+              src="./images/fragrancia/sabonete-cheiros-bahia/camihhos-do-mar.png"
+              style="margin-top: 120px"
+            />
+            <img
+              src="./images/fragrancia/sabonete-cheiros-bahia/savana.png"
+              style="margin-top: 120px"
+            />
+            <img
+              src="./images/fragrancia/sabonete-cheiros-bahia/tropicalia.png"
+              style="margin-top: 120px"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product8" style="display: none">
+      <div
+        class="floating-color-product-description-11"
+        style="width: 68vw"
+      ></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product8', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product8', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div
+          class="product-image-container"
+          style="padding-top: 120px; margin-bottom: 32 px"
+        >
+          <img src="./images/tela10Sabonete.png" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Liquid Soap</p>
+          <p class="article-description-title">
+            Bark & Leaves
+            <span
+              class="article-description-quantity"
+              style="font-weight: normal"
+              >500ml</span
+            >
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p style="margin-top: 48px">
+            Liquid Soap Clássicos Bark & Leaves cleans, perfumes and leaves
+            your soft hands. The glycolic extracts in its composition
+            have an emollient and nourishing action, providing a
+            velvety and abundant foam.
+          </p>
+          <p style="margin-top: 48px">
+            Product also available in fragrances: Rosemary, Amber, Bamboo,
+            Curumim, Cotton Flower, Marruá, Pitanga and Provence.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of Use</p>
+          <p>
+            Apply directly to damp skin, massaging until formation
+            of foam. After applying the product, rinse with water.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Store in an airy place, away from light and heat. avoid contact
+            straight with eyes and mouth. External use. keep out of reach
+            of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="product9" style="display: none">
+      <div class="floating-color-product-description-11"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product9', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product9', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img src="./images/tela11Difusor.png" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Essence Diffuser</p>
+          <p class="article-description-title">
+            Avadore <span class="article-description-quantity">100ml</span>
+          </p>
+          <p class="article-description-title-sub">
+            Contains:
+            <span>
+              Glass bottle | Essence for Avadore Diffuser and Sticks
+            </span>
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p>
+            Essence Diffuser Avadore expresses delicacy and design
+            sophisticated, with an enveloping fragrance, with a floral accord and
+            inspired by the east.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of Use</p>
+          <p>
+            Pour the contents into the container to be used as a diffuser.
+            Insert the rods into the vial. Then reverse your
+            extremities, causing the absorbed fragrance to be exposed and
+            better aroma dispersion occurs. Fixation varies according to
+            room size and ventilation. It is recommended to use in places
+            closed.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Flammable Product. Keep away from fire and surfaces.
+            heated. Store in an airy place, away from light and heat. avoid
+            direct contact with eyes and mouth. External use. keep out of
+            reach of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="product10" style="display: none">
+      <div class="floating-color-product-description-12"></div>
+      <div class="product-section">
+        <div>
+          <div class="floating-buttons">
+            <img
+              src="./images/Home.png"
+              onclick="changePage('product10', 'main-page')"
+            />
+            <img
+              src="./images/back.png"
+              onclick="changePage('product10', 'product-selection')"
+            />
+          </div>
+        </div>
+        <div class="product-image-container">
+          <img src="./images/tela12-Deoparfum.png" />
+        </div>
+        <article class="article-description">
+          <p class="article-description-title">Deo Parfum</p>
+          <p class="article-description-title">
+            Select Herb <span class="article-description-quantity">100ml</span>
+          </p>
+          <div class="stamps-collection">
+            <img src="./images/approval-stamp/Green.png" />
+            <img src="./images/approval-stamp/Animal.png" />
+            <img src="./images/approval-stamp/Vegan.png" />
+          </div>
+          <p>
+            Seleto Herbo is an aromatic, fresh and herbal fragrance that
+            mixes the elegance of the diversity of herbs and spices. A
+            perfect combination for those looking for the best of perfumery
+            male.
+          </p>
+        </article>
+        <article class="article-usage">
+          <p class="article-usage-title">Mode of Use</p>
+          <p>
+            Spray onto hot spots such as wrists, neck and behind
+            ears.
+          </p>
+          <p class="article-usage-title" style="margin-top: 88px">Precautions</p>
+          <p>
+            Flammable Product. Keep away from fire and surfaces.
+            heated. Store in an airy place, away from light and heat. avoid
+            direct contact with eyes and mouth. External use. keep out of
+            reach of children and pets. If a reaction occurs,
+            discontinue use, seek medical advice and contact your
+            SAC.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a class="button-styled" href="#article-description-seleto-herbo">
+              Learn more about the fragrance.
+            </a>
+          </div>
+          <hr class="hr-styled" />
+          <p
+            class="article-description-title"
+            id="article-description-seleto-herbo"
+          >
+            Olfactory Pyramid
+          </p>
+          <p class="article-description-title-sub">
+            Olfactory Family:
+            <span> Aromatic Fougere </span>
+          </p>
+          <div class="fragrance-container">
+            <img src="./images/fragrancia/deo-parfum/tela12-Notasdesaida.png" />
+            <img src="./images/fragrancia/deo-parfum/tela12-Notasdecorpo.png" />
+            <img src="./images/fragrancia/deo-parfum/tela12-Notasdefundo.png" />
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
